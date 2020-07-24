@@ -27,11 +27,20 @@
     },
     "projects": [
         {
+            "name": "jamiejohnstone.com - my devops tooling playground",
+            "startDate": "2019-12-01",
+            "roles": ["Developer"],
+            "description": "While jamiejohnstone.com looks like the simplest website in the world, I consider it a bit of a playground for experimenting with automated deployment pipelines. Behind the scenes, this simple one-page site has been delivered with Terraform and CloudFormation, Jenkins, CircleCI and Github Actions, as a simple S3 Bucket Website and via a highly-available Kubernetes/Docker cluster.",
+            "url": "https://www.github.com/jsjohnstone/jamiejohnstone.com",
+            "keywords": ["aws","software","devops","cicd","terraform","nz", "uk"]
+        },
+        {
             "name": "Tixy - an open event ticketing platform",
             "startDate": "2010-11-01",
             "endDate": "2016-05-01",
             "roles": ["Lead Developer"],
             "description": "Tixy was a leading-edge even ticketing platform designed to satisfy the growing needs of New Zealand's community arts sector including individual promoters, medium-sized venues and larger scale producing companies.\n\nThis project was a massive learning experience for myself and the team I worked with. From my role, I forged relationships, lead user research, feature specification and design, and contributed code (mostly in PHP, SQL and Perl) along with managing a small team of developers.",
+            "url": "https://www.tixy.co.nz",
             "keywords": ["theatre","ticketing","tech","php","sql","perl","aws","software","events","nz"]
         }
     ],
