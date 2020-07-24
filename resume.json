@@ -6,7 +6,7 @@
         "picture": "https://avatars2.githubusercontent.com/u/272156?s=460&u=cc48582b9eb37f6320c1a77824a5fa30e447aa70&v=4",
         "email": "j@miej.co",
         "phone": "+44 7383 617770",
-        "website": "https://jamiejohnstone.com",
+        "url": "https://jamiejohnstone.com",
         "summary": "Exceedingly hands-on, happy to get stuck in, and eager to contribute to team success through learning and collaborating with others to continuously improve and deliver secure and reliable products and services.",
         "location": {
             "postalCode": "SW17",
@@ -47,26 +47,26 @@
     ],
     "work": [
         {
-            "company": "Masabi",
+            "name": "Masabi",
             "position": "Product Manager",
             "location": "London, United Kingdom",
             "startDate": "2019-12-31",
             "summary": "• Managed product in the B2B-focused validation engineering team, looking after embedded validators  used by over 75 public transport agencies and millions of commuters worldwide.\n• Worked with internal and external stakeholders to understand requirements, prioritise work streams, drive development and deliver on schedule.\n• In-depth data analysis and dashboard creation with Kibana, Tableau and SQL.\n• Actively participated in organisation delivery model transformation programmes.",
-            "website": "http://www.masabi.com/",
+            "url": "http://www.masabi.com/",
             "keywords": ["product","ticketing","transit","tech","software","uk"]
         },
         {
-            "company": "iTICKET",
+            "name": "iTICKET",
             "position": "Operations Manager",
             "location": "Auckland, New Zealand",
             "startDate": "2016-10-31",
             "endDate": "2018-05-31",
             "summary": "• Managed event IT and field operations for events up to 80,000 attendees for New Zealand's largest kiwi-owned ticketing company.\n• Worked closely with engineers to ensure smooth operation and development of Azure-hosted platform.\n• Provided training and support for staff and clients, including liaising with external IT teams to ensure successful deployment of ticketing systems and regular releasing/maintenance.\n• Oversaw IT operations including purchasing, configuring and maintaining equipment, networking and software/services.\n• Managed long-term projects and developed strategies to meet client or business requirements.\n• Recruited, trained and managed casual staff to assist with the delivery of event services.\n• Regularly wrote scripts and tools to automate tasks and improve team efficiency.",
-            "website": "https://www.iticket.co.nz/",
+            "url": "https://www.iticket.co.nz/",
             "keywords": ["theatre","operations","product","ticketing","tech","software","events","nz"]
         },
         {
-            "company": "Freelance/Self-Employed",
+            "name": "Freelance/Self-Employed",
             "position": "Stage Manager",
             "location": "Auckland, New Zealand / London, United Kingdom",
             "startDate": "2012-01-31",
@@ -77,7 +77,7 @@
                 "2018 - Stage Manager (Assembly Main Hall), Edinburgh Fringe Festival - Edinburgh, UK",
                 "2017 - Deputy Stage Manager, World Master's Games Opening Ceremony - Auckland, NZ"
             ],
-            "website": "https://www.jamiejohnstone.com",
+            "url": "https://www.jamiejohnstone.com",
             "keywords": ["theatre","stagemanager","events","nz","uk"]
         }
     ],
