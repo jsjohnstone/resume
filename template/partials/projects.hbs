@@ -2,7 +2,8 @@
 	<h2>Development Projects</h2>
 	<h5>Additional interesting software/development projects outside of roles:</h5>
 	{{#each resume.projects}}
-		<h4>{{#if name}}{{name}}{{/if}}</h4>
+		<h4>{{#if name}}{{#if url}}<a
+				href="{{url}}">{{name}} <i class="d-print-none fas fa-link fa-xs"></i></a>{{else}}{{name}}{{/if}}{{/if}}</h4>
 		{{#if keywords.length}}<div>
 			{{#each keywords}}<span class="badge badge-pill work-badge">{{.}}</span> {{/each}}
 		</div>{{/if}}
