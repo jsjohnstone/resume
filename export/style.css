@@ -1,11 +1,16 @@
 body {
     background: rgb(228,228,228); 
     font-family: Calibri;
-    padding: 40px;
+    padding: 0px;
 }
 
 .resume-card {
     border: 1px solid rgba(0,0,0,.2);
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* FONTS */
@@ -102,7 +107,16 @@ h2.top-profile {
     font-weight: 400;
 }
 
-@media only screen and (min-width: 574px) {
+@media only screen and (min-width: 576px) {
+    body {
+        padding: 40px
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+ 
     .profile-section {
         padding-bottom: 100px;
     }
