@@ -4,6 +4,10 @@ body {
     padding: 40px;
 }
 
+.resume-card {
+    border: 1px solid rgba(0,0,0,.2);
+}
+
 /* FONTS */
 h1 {  font-size: 35px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
 h2 { font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; margin-top: 20px; } 
