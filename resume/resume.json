@@ -31,29 +31,44 @@
             "roles": [
                 "Developer"
             ],
-            "description": "A playground for learning and experimenting with automated deployment pipelines including S3 websites, CloudFormation/Terraform, Jenkins/CircleCI/ Github Actions, and Kubernetes/Docker.",
+            "description": "A playground for learning and experimenting with automated deployment pipelines including S3 websites, CloudFormation/Terraform, Jenkins/CircleCI/Github Actions, and Kubernetes/Docker.",
             "url": "https://www.github.com/jsjohnstone/jamiejohnstone.com",
             "keywords": [
-                "aws",
-                "software",
-                "devops",
-                "cicd",
-                "terraform",
-                "nz",
-                "uk"
+                "AWS",
+                "CI/CD",
+                "Terraform",
+                "Containers",
+                "DevOps"
             ]
         },
         {
             "name": "Talking Lightbulb ('All Your Wants And Needs' International Tour)",
-            "description": "A Python application that converted sound input into DMX (theatre lighting control protocol) commands, allowing an on-stage lightbulb to 'speak'."
+            "description": "A Python application that converted sound input into DMX (theatre lighting control protocol) commands, allowing an on-stage lightbulb to 'speak'.",
+            "url": "https://github.com/jsjohnstone/talking-lightbulb",
+            "keywords": [
+                "Python",
+                "DMX",
+                "Sound/Light",
+                "Theatre"
+            ]
         },
         {
             "name": "Tixy, an open event ticketing platform",
-            "description": "Lead development of a modern event ticketing platform, built on AWS with PHP/SQL/Perl to satisfy the growing needs of New Zealand's community arts."
+            "description": "Lead development of a modern event ticketing platform, built on AWS with PHP/SQL/Perl to satisfy the growing needs of New Zealand's community arts.",
+            "keywords": [
+                "AWS",
+                "PHP/MySQL",
+                "Perl",
+                "Ticketing"
+            ]
         },
         {
             "name": "Comp Ticket Manager (NZ International Comedy Festival)",
-            "description": "A web app built in PHP/MySQL/HTML/jQuery to manage requests, approvals and allocation of complimentary tickets for 230 shows across 13 ticketing providers, including generating PDF reports and sending approval emails."
+            "description": "A web app built in PHP/MySQL/HTML/jQuery to manage requests, approvals and allocation of complimentary tickets for 230 shows across 13 ticketing providers, including generating PDF reports and sending approval emails.",
+            "keywords": [
+                "PHP/MySQL",
+                "Ticketing"
+            ]
         }
     ],
     "work": [
@@ -70,14 +85,7 @@
                 "Pairing with engineers in 10% time: learning Java/Python to gain a better technical understanding of products/assist with QA and code review, writing and deploying Terraform and Pipelines to assist with migration to a new git provider."
             ],
             "url": "http://www.masabi.com/",
-            "keywords": [
-                "Product",
-                "Agile",
-                "AWS",
-                "Java",
-                "Terraform",
-                "UK"
-            ]
+            "keywords": []
         },
         {
             "position": "Stage Manager/Technician (Freelance)",
@@ -91,13 +99,7 @@
                 "Solving problems, adjusting solutions and working as a team to continuously improve using an iterative, agile-like model."
             ],
             "url": "https://www.jamiejohnstone.com",
-            "keywords": [
-                "Freelance",
-                "Theatre",
-                "Python",
-                "UK",
-                "NZ"
-            ]
+            "keywords": []
         },
         {
             "name": "iTICKET",
@@ -113,14 +115,7 @@
                 "Contributing scripts/tools in Python and PHP to automate tasks and improve process, including integrating with ticketing and inventory APIs."
             ],
             "url": "https://www.iticket.co.nz/",
-            "keywords": [
-                "Operations",
-                "Infrastructure",
-                "Azure",
-                "Product",
-                "Agile",
-                "Software"
-            ]
+            "keywords": []
         }
     ],
     "awards": [
