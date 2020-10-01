@@ -81,6 +81,16 @@ li.skills {
     border-bottom: 1px solid rgb(0,0,0,0.1);
 }
 
+li.skills-level-override {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 0px;
+}
+
+.skills-progress-bar {
+    background-color: #a5a5a5;
+}
+
 /* BODY */
 h2.top-profile {
     margin-top: 0px;
