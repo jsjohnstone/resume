@@ -1,9 +1,9 @@
 {{#if resume.projects.length}}
-<h2>Development Projects</h2>
-<h5>Additional interesting software/development projects outside of roles:</h5>
-	{{#each resume.projects}}		
-<h4>{{#if name}}{{name}}{{/if}}
-<p>{{#if description}}{{description}}{{/if}}
-{{/each}}
-<hr>
+	<h2>Development Projects</h2>
+	<h5>Additional interesting software/development projects outside of roles:</h5>
+	{{#each resume.projects}}
+		<h4>{{#if name}}{{name}}{{/if}}</h4>
+		<p>{{#if description}}{{description}}{{/if}}</p>
+	{{/each}}
+	<hr>
 {{/if}}

@@ -1,17 +1,17 @@
 {{#if resume.work.length}}
-<h2>Employment History</h2>
-	{{#each resume.work}}		
-<h4>{{#if position}}{{position}}{{/if}}{{#if name}}, {{#if website}}<a href="{{website}}">{{name}}</a>{{else}}{{name}}{{/if}}{{/if}}</h4>
-<h5>{{#if location}}{{location}}{{/if}} ({{#if startDate}}{{dateFormat startDate format="MMM YYYY"}}{{/if}}{{#if endDate}} — {{dateFormat endDate format="MMM YYYY"}}{{else}} - Present{{/if}})</h5>
-<p>{{#if summary}}{{summary}}{{/if}}
-    {{#if highlights.length}}
+	<h2>Employment History</h2>
+	{{#each resume.work}}
+		<h4>{{#if position}}{{position}}{{/if}}{{#if name}}, {{#if website}}<a
+				href="{{website}}">{{name}}</a>{{else}}{{name}}{{/if}}{{/if}}</h4>
+		<h5>{{#if location}}{{location}}{{/if}}
+			({{#if startDate}}{{dateFormat startDate format="MMM YYYY"}}{{/if}}
+			{{#if endDate}} — {{dateFormat endDate format="MMM YYYY"}}{{else}} - Present{{/if}})</h5>
+		{{#if summary}}<p>{{summary}}</p>{{/if}}
+		{{#if highlights.length}}
 		<ul>
-			{{#each highlights}}
-			<li>{{.}}</li>
-			{{/each}}
+			{{#each highlights}}<li>{{.}}</li>{{/each}}
 		</ul>
 		{{/if}}
-</p>
-{{/each}}
-<hr>
+	{{/each}}
+	<hr>
 {{/if}}

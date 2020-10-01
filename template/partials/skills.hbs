@@ -1,11 +1,8 @@
 {{#if resume.skills.length}}
-<h2 class="top-skills">Skills</h2>
-<ul class="skills">
-	{{#each resume.skills}}		
-{{#if name}}
-    <li class="skills">{{name}}</li>
+    <h2 class="top-skills">Skills</h2>
+    <ul class="skills">
+        {{#each resume.skills}}
+            {{#if name}}<li class="skills">{{name}}</li>{{/if}}
+        {{/each}}
+    </ul>
 {{/if}}
-{{/each}}
-</ul>
-{{/if}}
-                            
