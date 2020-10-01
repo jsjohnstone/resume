@@ -1,0 +1,15 @@
+{
+  "name": "resume",
+  "version": "0.0.5",
+  "description": "A theme for JSON Resume",
+  "author": "Jamie Johnstone",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsjohnstone/resume"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.3",
+    "moment": "^2.29.0"
+  },
+  "license": "MIT"
+}
