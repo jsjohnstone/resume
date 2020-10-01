@@ -71,16 +71,16 @@
             ],
             "url": "http://www.masabi.com/",
             "keywords": [
-                "product",
-                "ticketing",
-                "transit",
-                "tech",
-                "software",
-                "uk"
+                "Product",
+                "Agile",
+                "AWS",
+                "Java",
+                "Terraform",
+                "UK"
             ]
         },
         {
-            "position": "Freelance Stage Manager/Technician",
+            "position": "Stage Manager/Technician (Freelance)",
             "location": "London, United Kingdom",
             "startDate": "2018-06-01",
             "endDate": "2019-12-01",
@@ -92,11 +92,11 @@
             ],
             "url": "https://www.jamiejohnstone.com",
             "keywords": [
-                "theatre",
-                "stagemanager",
-                "events",
-                "nz",
-                "uk"
+                "Freelance",
+                "Theatre",
+                "Python",
+                "UK",
+                "NZ"
             ]
         },
         {
@@ -114,14 +114,12 @@
             ],
             "url": "https://www.iticket.co.nz/",
             "keywords": [
-                "theatre",
-                "operations",
-                "product",
-                "ticketing",
-                "tech",
-                "software",
-                "events",
-                "nz"
+                "Operations",
+                "Infrastructure",
+                "Azure",
+                "Product",
+                "Agile",
+                "Software"
             ]
         }
     ],
