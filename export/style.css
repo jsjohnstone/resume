@@ -31,7 +31,7 @@ a:hover { text-decoration: underline; color: black; }
 /* HEADER */
 
 .resume-header {
-    background-color: rgb(255,248,89);
+    background-color: #ffcc2f;
 }
 
 .header-container {
@@ -103,7 +103,7 @@ h2.top-profile {
 
 .work-badge {
     color: #000;
-    background-color: #fff858;
+    background-color: #ffcc2f;
     font-weight: 400;
 }
 
