@@ -27,6 +27,23 @@
     },
     "projects": [
         {
+            "name": "Tech Returners 'Tech For Good' Project – 'The Sentimentalists'",
+            "roles": [
+                "Developer"
+            ],
+            "description": "As part of the Tech Returners 'Your Return To Tech' programme, built an app that helps users identify ‘fake news’ by combining NLP and external fact-check data sources in a friendly user interface. Built on AWS using Lambda (Python), API Gateway, X-Ray, ReactJS, Material-UI and deployed with Github Actions and Terraform.",
+            "url": "https://github.com/TheSentimentalists",
+            "keywords": [
+                "AWS",
+                "Serverless",
+                "API Gateway", 
+                "ReactJS", 
+                "Material-UI",
+                "Github Actions",
+                "Terraform"
+            ]
+        },
+        {
             "name": "jamiejohnstone.com",
             "roles": [
                 "Developer"
