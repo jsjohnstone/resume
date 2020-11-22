@@ -25,6 +25,47 @@
             }
         ]
     },
+    "work": [
+        {
+            "name": "Masabi",
+            "position": "Product Manager",
+            "location": "London, United Kingdom",
+            "startDate": "2019-12-31",
+            "summary": "Managed road map and agile delivery for a tribe of 13 engineers, overseeing the lifecycle of several transit ticketing validation products including iOS/Android apps, backend (Java), SDKs and APIs, and turnkey hardware solutions (embedded Linux/Java), as well as technically contributing to solution design and delivery.",
+            "url": "http://www.masabi.com/",
+            "keywords": []
+        },
+        {
+            "position": "Stage Manager/Technician (Freelance)",
+            "location": "London, United Kingdom",
+            "startDate": "2018-06-01",
+            "endDate": "2019-12-01",
+            "summary": "Strong career in live theatre, delivering technically complex productions in a variety of roles. Highlights included:",
+            "highlights": [
+                "Roles with leading companies, including Disney Theatrical Group, the Royal Shakespeare Company and the Edinburgh Fringe.",
+                "Using software development skills: creating a 'talking lightbulb' with Python, programming complex/dynamic lighting for an international tour.",
+                "Solving problems, adjusting solutions and working as a team to continuously improve using an iterative, agile-like model."
+            ],
+            "url": "https://www.jamiejohnstone.com",
+            "keywords": []
+        },
+        {
+            "name": "iTICKET",
+            "position": "Operations Manager",
+            "location": "Auckland, New Zealand",
+            "startDate": "2016-10-01",
+            "endDate": "2018-05-31",
+            "summary": "Managed IT and field operations for events with up to 80,000 attendees for New Zealand's largest kiwi-owned ticketing company. Highlights included:",
+            "highlights": [
+                "Working closely with engineers to ensure smooth operation and development of Azure-hosted platform using Agile methodologies.",
+                "Providing training, documentation and support for staff and clients, including liaising with external IT teams/software developers to ensure successful deployment and integration of ticketing infrastructure.",
+                "Overseeing IT operations including purchasing, configuring and maintaining equipment, networking and software/services.",
+                "Contributing scripts/tools in Python and PHP to automate tasks and improve process, including integrating with ticketing and inventory APIs."
+            ],
+            "url": "https://www.iticket.co.nz/",
+            "keywords": []
+        }
+    ],
     "projects": [
         {
             "name": "Tech Returners 'Tech For Good' Project – 'The Sentimentalists'",
@@ -86,47 +127,6 @@
                 "PHP/MySQL",
                 "Ticketing"
             ]
-        }
-    ],
-    "work": [
-        {
-            "name": "Masabi",
-            "position": "Junior Product Manager",
-            "location": "London, United Kingdom",
-            "startDate": "2019-12-31",
-            "summary": "Managed road map and agile delivery for a tribe of 13 engineers, overseeing the lifecycle of several transit ticketing validation products including iOS/Android apps, backend (Java), SDKs and APIs, and turnkey hardware solutions (embedded Linux/Java), as well as technically contributing to solution design and delivery.",
-            "url": "http://www.masabi.com/",
-            "keywords": []
-        },
-        {
-            "position": "Stage Manager/Technician (Freelance)",
-            "location": "London, United Kingdom",
-            "startDate": "2018-06-01",
-            "endDate": "2019-12-01",
-            "summary": "Strong career in live theatre, delivering technically complex productions in a variety of roles. Highlights included:",
-            "highlights": [
-                "Roles with leading companies, including Disney Theatrical Group, the Royal Shakespeare Company and the Edinburgh Fringe.",
-                "Using software development skills: creating a 'talking lightbulb' with Python, programming complex/dynamic lighting for an international tour.",
-                "Solving problems, adjusting solutions and working as a team to continuously improve using an iterative, agile-like model."
-            ],
-            "url": "https://www.jamiejohnstone.com",
-            "keywords": []
-        },
-        {
-            "name": "iTICKET",
-            "position": "Operations Manager",
-            "location": "Auckland, New Zealand",
-            "startDate": "2016-10-01",
-            "endDate": "2018-05-31",
-            "summary": "Managed IT and field operations for events with up to 80,000 attendees for New Zealand's largest kiwi-owned ticketing company. Highlights included:",
-            "highlights": [
-                "Working closely with engineers to ensure smooth operation and development of Azure-hosted platform using Agile methodologies.",
-                "Providing training, documentation and support for staff and clients, including liaising with external IT teams/software developers to ensure successful deployment and integration of ticketing infrastructure.",
-                "Overseeing IT operations including purchasing, configuring and maintaining equipment, networking and software/services.",
-                "Contributing scripts/tools in Python and PHP to automate tasks and improve process, including integrating with ticketing and inventory APIs."
-            ],
-            "url": "https://www.iticket.co.nz/",
-            "keywords": []
         }
     ],
     "awards": [
