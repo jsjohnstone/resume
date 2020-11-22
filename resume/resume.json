@@ -94,13 +94,7 @@
             "position": "Junior Product Manager",
             "location": "London, United Kingdom",
             "startDate": "2019-12-31",
-            "summary": "Managed road map and agile delivery for a tribe of 13 engineers, overseeing the lifecycle of several transit ticketing validation products including iOS/Android apps, backend (Java), SDKs and APIs, and turnkey hardware solutions (embedded Linux/Java), as well as technically contributing to solution design and delivery. Other role highlights included:",
-            "highlights": [
-                "In-depth data analysis and dashboarding with Kibana, Tableau and SQL,",
-                "Delivering technical documentation/training for multiple audiences,",
-                "Championing Operational Excellence: metric/data-driven decisions, focus on automation and team process, participation in company-wide Delivery Model review, and development of releasing methodology and incident management processes within team.",
-                "Pairing with engineers in 10% time: learning Java/Python to gain a better technical understanding of products/assist with QA and code review, writing and deploying Terraform and Pipelines to assist with migration to a new git provider."
-            ],
+            "summary": "Managed road map and agile delivery for a tribe of 13 engineers, overseeing the lifecycle of several transit ticketing validation products including iOS/Android apps, backend (Java), SDKs and APIs, and turnkey hardware solutions (embedded Linux/Java), as well as technically contributing to solution design and delivery.",
             "url": "http://www.masabi.com/",
             "keywords": []
         },
