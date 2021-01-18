@@ -141,6 +141,16 @@
     ],
     "awards": [
         {
+            "title": "Certified Kubernetes Administrator (CKA)",
+            "awarder": "Cloud Native Computing Foundation (CNCF)",
+            "date": "2021-01-04"
+        },
+        {
+            "title": "Terraform Associate",
+            "awarder": "HashiCorp",
+            "date": "2020-12-26"
+        },
+        {
             "title": "AWS Certified Solutions Architect (Associate)",
             "awarder": "Amazon Web Services",
             "date": "2020-05-01"
