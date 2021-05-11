@@ -8,7 +8,7 @@
     "url": "https://github.com/jsjohnstone/resume"
   },
   "dependencies": {
-    "handlebars": "^4.7.3",
+    "handlebars": "^4.7.7",
     "moment": "^2.29.0"
   },
   "license": "MIT"
