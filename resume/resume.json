@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Jamie Johnstone",
-        "label": "Cloud Engineer",
+        "label": "Cloud Engineer, Product Manager, Live Events Geek",
         "image": "https://avatars2.githubusercontent.com/u/272156?s=460&u=cc48582b9eb37f6320c1a77824a5fa30e447aa70&v=4",
         "email": "j@miej.co",
         "phone": "+44 7383 617770",
@@ -27,10 +27,30 @@
     },
     "work": [
         {
+            "name": "Amazon Web Services",
+            "position": "Startup Solutions Architect",
+            "location": "London, United Kingdom",
+            "startDate": "2022-07-04",
+            "summary": "Joined the UKIR Startup Solution Architecture team in July 2022, working with organisations new to AWS and helping design solutions that will scale and grow with the complex needs of startups across multiple segments.",
+            "url": "http://aws.amazon.com/",
+            "keywords": []
+        },
+        {
+            "name": "Ticket Tailor",
+            "position": "Senior Product Manager",
+            "location": "London, United Kingdom",
+            "startDate": "2021-08-02",
+            "endDate": "2022-07-03",
+            "summary": "Ticket Tailor is a simple, free event ticketing solution for events of all shapes and sizes. Hired and built out the product function, leading roadmap and delivery of three busy, world-known products including the core ticketing product and launch of a completely new service.",
+            "url": "http://www.tickettailor.com/",
+            "keywords": []
+        },
+        {
             "name": "OpenCredo",
             "position": "Consultant",
             "location": "London, United Kingdom",
             "startDate": "2021-01-11",
+            "endDate": "2021-08-01",
             "summary": "OpenCredo is a pragmatic hands-on software and DevOps consultancy with a wealth of experience in open source technologies. Jamie joined the Delivery team in January 2021 as a Consultant.",
             "url": "http://www.opencredo.com/",
             "keywords": []
@@ -140,6 +160,11 @@
         }
     ],
     "awards": [
+        {
+            "title": "AWS Certified Solutions Architect (Professional)",
+            "awarder": "Amazon Web Services",
+            "date": "2023-03-16"
+        },
         {
             "title": "Certified Kubernetes Administrator (CKA)",
             "awarder": "Cloud Native Computing Foundation (CNCF)",
