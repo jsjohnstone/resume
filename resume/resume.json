@@ -8,7 +8,7 @@
         "url": "https://jamiejohnstone.com",
         "summary": "Enthusiastic, multi-skilled technology professional with experience building platforms and products - whether that's writing code, defining strategy and vision, or overseeing a service outage. Driven by a keen desire to continuously learn and share knowledge to help solve real world problems.",
         "location": {
-            "postalCode": "SW17",
+            "postalCode": "SW16",
             "city": "London, United Kingdom",
             "countryCode": "GB"
         },
@@ -160,6 +160,11 @@
         }
     ],
     "awards": [
+        {
+            "title": "Certified Kubernetes Security Specialist (CKS)",
+            "awarder": "Cloud Native Computing Foundation (CNCF)",
+            "date": "2023-12-16"
+        },
         {
             "title": "AWS Certified Solutions Architect (Professional)",
             "awarder": "Amazon Web Services",
