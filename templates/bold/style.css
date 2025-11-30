@@ -44,7 +44,7 @@ html {
 body {
     font-family: var(--font-body);
     color: var(--color-text-dark);
-    line-height: 1.6;
+    line-height: 1.2;
     background: var(--color-header);
 }
 
@@ -94,7 +94,7 @@ body {
 .header-summary {
     max-width: 700px;
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.2;
     opacity: 0.85;
     margin-bottom: var(--spacing-xl);
 }
@@ -355,7 +355,7 @@ body {
 
 .work-summary {
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.2;
 }
 
 .work-highlights {
@@ -365,7 +365,7 @@ body {
 
 .work-highlights li {
     margin-bottom: var(--spacing-sm);
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .work-keywords {
