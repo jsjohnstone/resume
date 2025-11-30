@@ -20,7 +20,7 @@ jobs:
     - name: Install Dependencies
       run: npm ci
     - name: Export Resume
-      run: node export.js
+      run: npm run build:bold
     - name: Deploy to S3
       uses: jsjohnstone/s3-site-deploy@master
       with:

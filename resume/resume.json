@@ -1,6 +1,6 @@
 {
     "basics": {
-        "name": "Jamie Johnstone",
+        "name": "jamie johnstone",
         "label": "Cloud Engineer, Product Manager, Live Events Geek",
         "image": "https://avatars2.githubusercontent.com/u/272156?s=460&u=cc48582b9eb37f6320c1a77824a5fa30e447aa70&v=4",
         "email": "j@miej.co",
@@ -33,6 +33,7 @@
             "startDate": "2022-07-04",
             "summary": "Joined the UKIR Startup Solution Architecture team in July 2022, working with organisations new to AWS and helping design solutions that will scale and grow with the complex needs of startups across multiple segments.",
             "url": "http://aws.amazon.com/",
+            "logo": "logos/aws.png",
             "keywords": []
         },
         {
@@ -43,6 +44,7 @@
             "endDate": "2022-07-03",
             "summary": "Ticket Tailor is a simple, free event ticketing solution for events of all shapes and sizes. Hired and built out the product function, leading roadmap and delivery of three busy, world-known products including the core ticketing product and launch of a completely new service.",
             "url": "http://www.tickettailor.com/",
+            "logo": "logos/tickettailor.png",
             "keywords": []
         },
         {
@@ -53,6 +55,7 @@
             "endDate": "2021-08-01",
             "summary": "OpenCredo is a pragmatic hands-on software and DevOps consultancy with a wealth of experience in open source technologies. Jamie joined the Delivery team in January 2021 as a Consultant.",
             "url": "http://www.opencredo.com/",
+            "logo": "logos/opencredo.png",
             "keywords": []
         },
         {
@@ -63,10 +66,12 @@
             "endDate": "2020-12-22",
             "summary": "Managed road map and agile delivery for a tribe of 13 engineers, overseeing the lifecycle of several transit ticketing validation products including iOS/Android apps, backend (Java), SDKs and APIs, and turnkey hardware solutions (embedded Linux/Java), as well as technically contributing to solution design and delivery.",
             "url": "http://www.masabi.com/",
+            "logo": "logos/masabi.png",
             "keywords": []
         },
         {
-            "position": "Stage Manager/Technician (Freelance)",
+            "name": "Freelance",
+            "position": "Stage Manager/Technician",
             "location": "London, United Kingdom",
             "startDate": "2018-06-01",
             "endDate": "2019-12-01",
@@ -77,6 +82,7 @@
                 "Solving problems, adjusting solutions and working as a team to continuously improve using an iterative, agile-like model."
             ],
             "url": "https://www.jamiejohnstone.com",
+            "logo": "logos/sm.png",
             "keywords": []
         },
         {
@@ -93,7 +99,220 @@
                 "Contributing scripts/tools in Python and PHP to automate tasks and improve process, including integrating with ticketing and inventory APIs."
             ],
             "url": "https://www.iticket.co.nz/",
+            "logo": "logos/iticket.png",
             "keywords": []
+        }
+    ],
+    "stageCredits": [
+        {
+            "year": "XXXX",
+            "role": "Assistant Stage Manager (SM Cover)",
+            "show": "Disney's Aladdin (West End)",
+            "director": "Casey Nicholaw",
+            "company": "Disney Theatrical Group"
+        },
+        {
+            "year": "2018",
+            "role": "Stage Manager",
+            "show": "Ed Fringe Festival – Main Hall",
+            "director": "Hannah Moore",
+            "company": "Assembly Festival"
+        },
+        {
+            "year": "2018",
+            "role": "Stage Manager",
+            "show": "Jazz Festival – Main Hall",
+            "director": "Hannah Moore",
+            "company": "Assembly Festival"
+        },
+        {
+            "year": "XXXX",
+            "role": "Stage Manager",
+            "show": "Legacy Project V",
+            "director": "Bruce Brown",
+            "company": "The Legacy Project (NZ)"
+        },
+        {
+            "year": "2017",
+            "role": "Deputy Stage Manager",
+            "show": "WMG 2017 Opening Ceremony",
+            "director": "Mike Mizrahi",
+            "company": "World Master's Games"
+        },
+        {
+            "year": "XXXX",
+            "role": "Stage Manager",
+            "show": "Venus in Fur",
+            "director": "Shane Bosher",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "Stage Manager",
+            "show": "Lysistrata",
+            "director": "Michael Hurst",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "2015",
+            "role": "Stage Manager (Calling)",
+            "show": "Le Comique 2015",
+            "director": "Maria Deere",
+            "company": "NZ Comedy Trust"
+        },
+        {
+            "year": "2015",
+            "role": "Stage Manager (Calling)",
+            "show": "Old Mout Cider Comedy Gala 2015",
+            "director": "Maria Deere",
+            "company": "NZ Comedy Trust"
+        },
+        {
+            "year": "2015",
+            "role": "Stage Manager (Calling)",
+            "show": "Night of the Queer 2015",
+            "director": "MM Hollins",
+            "company": "TAPAC"
+        },
+        {
+            "year": "XXXX",
+            "role": "Deputy Stage Manager",
+            "show": "Little Mermaid Jr.",
+            "director": "Jonathan Alver",
+            "company": "National Youth Theatre Co"
+        },
+        {
+            "year": "XXXX",
+            "role": "Assistant Stage Manager",
+            "show": "The Good Soul of Szechuan",
+            "director": "Colin McColl",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "Assistant Stage Manager / Pyro",
+            "show": "Once on Chunuk Bair",
+            "director": "Ian Mune",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "Stage Manager Swing",
+            "show": "Paniora!",
+            "director": "Colin McColl",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "Assistant Stage Manager",
+            "show": "Sea (World Premiere)",
+            "director": "Julie Nolan",
+            "company": "Red Leap Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "Stage Manager",
+            "show": "Like There's No Tomorrow",
+            "director": "Robin Kerr",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "2016",
+            "role": "Production Manager",
+            "show": "Next Big Thing 2016",
+            "director": "Lynne Cardy",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "Production Manager / LX Operator",
+            "show": "All Your Wants and Needs (UK Tour)",
+            "director": "Robin Kerr",
+            "company": "The Playground Collective"
+        },
+        {
+            "year": "XXXX",
+            "role": "Production Manager",
+            "show": "Jesus Christ Part II",
+            "director": "Oliver Driver",
+            "company": "Basement Theatre Trust"
+        },
+        {
+            "year": "2015",
+            "role": "Production Manager",
+            "show": "Young and Hungry 2015",
+            "director": "Gabrielle Rhodes",
+            "company": "Basement Theatre Trust"
+        },
+        {
+            "year": "2015",
+            "role": "Venue Manager",
+            "show": "Auckland Arts Festival 2015",
+            "director": "Jo Kilgour",
+            "company": "Auckland Arts Festival Trust"
+        },
+        {
+            "year": "XXXX",
+            "role": "Production Manager",
+            "show": "Hauraki Horror",
+            "director": "Rachel House",
+            "company": "Basement Theatre Trust"
+        },
+        {
+            "year": "2014",
+            "role": "Production Manager",
+            "show": "Young and Hungry 2014",
+            "director": "Leon Wadham",
+            "company": "Basement Theatre Trust"
+        },
+        {
+            "year": "2014",
+            "role": "Production Manager",
+            "show": "In Flagrante (NZ Tour 2014)",
+            "director": "Mary-Jane O'Reilly",
+            "company": "Flagrant Productions"
+        },
+        {
+            "year": "XXXX",
+            "role": "Production Assistant",
+            "show": "The Arrival (Asia Tour)",
+            "director": "Julie Nolan",
+            "company": "Red Leap Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "LX Operator / Programmer",
+            "show": "That Bloody Woman",
+            "director": "Kip Chapman",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "LX Swing",
+            "show": "Guys and Dolls",
+            "director": "Raymond Hawthorne",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "XXXX",
+            "role": "LX Operator",
+            "show": "Enlightenment",
+            "director": "Andrew Foster",
+            "company": "Auckland Theatre Company"
+        },
+        {
+            "year": "2014",
+            "role": "LX Operator",
+            "show": "NZ International Comedy Fest 2014",
+            "director": "Maria Deere",
+            "company": "NZ Comedy Trust"
+        },
+        {
+            "year": "XXXX",
+            "role": "LX Operator",
+            "show": "Aladdin Jr",
+            "director": "Jonathan Alver",
+            "company": "National Youth Theatre Co"
         }
     ],
     "projects": [
@@ -102,7 +321,7 @@
             "roles": [
                 "Developer"
             ],
-            "description": "As part of the Tech Returners 'Your Return To Tech' programme, built an app that helps users identify ‘fake news’ by combining NLP and external fact-check data sources in a friendly user interface. Built on AWS using Lambda (Python), API Gateway, X-Ray, ReactJS, Material-UI and deployed with Github Actions and Terraform.",
+            "description": "As part of the Tech Returners 'Your Return To Tech' programme, built an app that helps users identify 'fake news' by combining NLP and external fact-check data sources in a friendly user interface. Built on AWS using Lambda (Python), API Gateway, X-Ray, ReactJS, Material-UI and deployed with Github Actions and Terraform.",
             "url": "https://github.com/TheSentimentalists",
             "keywords": [
                 "AWS",
@@ -200,7 +419,7 @@
         {
             "institution": "Unitec Institute of Technology",
             "area": "BPSA Production Design and Management",
-            "studyType": "Bachelor’s Degree",
+            "studyType": "Bachelor's Degree",
             "startDate": "2011-12-31",
             "endDate": "2013-12-31"
         }

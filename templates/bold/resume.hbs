@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+        __    _    __  __                   __
+       / /_  (_)  / /_/ /_  ___  ________  / /
+      / __ \/ /  / __/ __ \/ _ \/ ___/ _ \/ / 
+     / / / / /  / /_/ / / /  __/ /  /  __/_/  
+    /_/ /_/_/   \__/_/ /_/\___/_/   \___(_)   
+                                          
+    Thanks for checking out my resume (and behind the scenes!)
+
+    This page is generated automagically from a JSON file and template, both hosted 
+    on Github and built with node and Github Actions.
+
+    For a behind-the-scenes peek, check out: https://github.com/jsjohnstone/resume
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#resume.basics}}{{name}} - {{label}}{{/resume.basics}}</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c91a1c1eae.js" crossorigin="anonymous"></script>
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="./hand.ico">
+</head>
+
+<body>
+    <!-- Header Section -->
+    {{> header }}
+
+    <!-- Jump Navigation -->
+    <nav class="jump-nav">
+        <div class="jump-nav-inner">
+            <!-- Nav Brand - appears on scroll -->
+            <div class="nav-brand" id="navBrand">
+                {{#with resume.basics}}
+                <span class="nav-brand-name">{{name}}</span>
+                {{/with}}
+            </div>
+            <div class="jump-links">
+                <a href="#career" class="jump-link">Tech</a>
+                <a href="#stage" class="jump-link">Theatre</a>
+                {{!-- <a href="#projects" class="jump-link">Projects</a>
+                <a href="#certifications" class="jump-link">Certifications</a> --}}
+                <a href="#education" class="jump-link">Education</a>
+                {{!-- <a href="#skills" class="jump-link">Skills</a> --}}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Career Section -->
+    <section id="career" class="section section-career">
+        <div class="section-inner">
+            {{> career }}
+        </div>
+    </section>
+
+    <!-- Stage Credits Section -->
+    <section id="stage" class="section section-stage">
+        <div class="section-inner">
+            {{> stage-credits }}
+        </div>
+    </section>
+
+    <!-- Projects Section 
+    <section id="projects" class="section section-projects">
+        <div class="section-inner">
+            {{> projects }}
+        </div>
+    </section> -->
+
+    <!-- Certifications Section 
+    <section id="certifications" class="section section-certifications">
+        <div class="section-inner">
+            {{> certifications }}
+        </div>
+    </section> -->
+
+    <!-- Education Section -->
+    <section id="education" class="section section-education">
+        <div class="section-inner">
+            {{> education }}
+        </div>
+    </section>
+
+    <!-- Skills Section 
+    <section id="skills" class="section section-skills">
+        <div class="section-inner">
+            {{> skills }}
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="https://www.github.com/jsjohnstone" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jsjohnstone" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.jamiejohnstone.com" aria-label="Website">
+                    <i class="fas fa-globe-americas"></i>
+                </a>
+            </div>
+            <p class="footer-text">Built with ❤️ using Handlebars & Node.js</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for jump navigation
+        document.querySelectorAll('.jump-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Section colours for blending (pastel palette)
+        const sectionColors = {
+            header: '#FBE47B',
+            career: '#FFCAB0',
+            stage: '#B5EAD7',
+            projects: '#A8D8EA',
+            certifications: '#C7CEEA',
+            education: '#E2C2D9',
+            skills: '#FFEAA7',
+            footer: '#2C3E50'
+        };
+
+        // Helper to interpolate between two hex colors
+        function lerpColor(color1, color2, factor) {
+            const hex = x => x.toString(16).padStart(2, '0');
+            const r1 = parseInt(color1.slice(1, 3), 16);
+            const g1 = parseInt(color1.slice(3, 5), 16);
+            const b1 = parseInt(color1.slice(5, 7), 16);
+            const r2 = parseInt(color2.slice(1, 3), 16);
+            const g2 = parseInt(color2.slice(3, 5), 16);
+            const b2 = parseInt(color2.slice(5, 7), 16);
+            const r = Math.round(r1 + factor * (r2 - r1));
+            const g = Math.round(g1 + factor * (g2 - g1));
+            const b = Math.round(b1 + factor * (b2 - b1));
+            return `#${hex(r)}${hex(g)}${hex(b)}`;
+        }
+
+        // Update active link and blend background on scroll
+        const sections = document.querySelectorAll('.section');
+        const jumpLinks = document.querySelectorAll('.jump-link');
+        const navBrand = document.getElementById('navBrand');
+        const header = document.querySelector('.header');
+        const jumpNav = document.querySelector('.jump-nav');
+
+        // Initial state - navbar at bottom
+        jumpNav.classList.add('at-header');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollY = window.scrollY;
+            
+            // Toggle navbar position based on scroll
+            const headerBottom = header.offsetTop + header.offsetHeight - window.innerHeight;
+            if (scrollY > headerBottom) {
+                jumpNav.classList.remove('at-header');
+                navBrand.classList.add('visible');
+            } else {
+                jumpNav.classList.add('at-header');
+                navBrand.classList.remove('visible');
+            }
+            
+            // Find current section and calculate blend
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+                
+                // Calculate how far through the section we are
+                const sectionProgress = (scrollY - sectionTop + 200) / sectionHeight;
+                
+                if (sectionProgress >= 0 && sectionProgress <= 1) {
+                    const currentColor = sectionColors[section.getAttribute('id')];
+                    const nextSection = sections[index + 1];
+                    
+                    if (nextSection) {
+                        const nextColor = sectionColors[nextSection.getAttribute('id')];
+                        // Only blend in the last 30% of the section
+                        if (sectionProgress > 0.7) {
+                            const blendFactor = (sectionProgress - 0.7) / 0.3;
+                            const blendedColor = lerpColor(currentColor, nextColor, blendFactor);
+                            section.style.background = blendedColor;
+                        } else {
+                            section.style.background = currentColor;
+                        }
+                    }
+                }
+            });
+
+            // Update active navigation link and scroll into view
+            jumpLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                    // Scroll the active link into view on the left
+                    link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
