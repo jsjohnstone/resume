@@ -229,6 +229,40 @@ body {
     max-height: 80vh;
 }
 
+/* Interactive portrait hover effects */
+.portrait-interactive {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.portrait-interactive .header-portrait {
+    transition: opacity 0.6s ease-in-out, filter 0.3s ease, transform 0.3s ease;
+}
+
+.portrait-interactive:hover .header-portrait {
+    transform: scale(1.02);
+}
+
+/* When any portrait is hovered, grey out others */
+.header-images.portrait-hover-active .portrait-interactive:not(.portrait-hovered) .header-portrait {
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3)) grayscale(100%) brightness(0.7);
+}
+
+.header-images.portrait-hover-active .portrait-center .header-portrait {
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3)) grayscale(100%) brightness(0.7);
+}
+
+/* The hovered portrait stays vibrant */
+.portrait-interactive.portrait-hovered .header-portrait {
+    filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.4));
+}
+
+/* Highlighted nav link when portrait is hovered */
+.jump-link.portrait-highlight {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
 /* Image loader */
 .image-loader {
     position: absolute;
