@@ -98,6 +98,10 @@ body {
     animation-delay: -30s;
 }
 
+.marquee-slow .marquee-content {
+    animation-duration: 90s;
+}
+
 .marquee-text {
     font-family: var(--font-display);
     font-size: 28vh;
@@ -156,14 +160,14 @@ body {
     z-index: 15;
 }
 
-/* Left side portraits */
+/* Left side portraits - fixed positions from center */
 .portrait-left {
     z-index: 10;
 }
 
 .portrait-far-left {
-    left: 0;
-    transform: translateX(-20%);
+    left: calc(50% - 700px);
+    transform: translateX(-50%);
 }
 
 .portrait-far-left .header-portrait {
@@ -171,27 +175,29 @@ body {
 }
 
 .portrait-near-left {
-    left: 12%;
+    left: calc(50% - 300px);
+    transform: translateX(-50%);
     z-index: 12;
 }
 
-/* Right side portraits */
+/* Right side portraits - fixed positions from center */
 .portrait-right {
     z-index: 10;
 }
 
 .portrait-near-right {
-    right: 12%;
+    left: calc(50% + 300px);
+    transform: translateX(-50%);
     z-index: 12;
 }
 
 .portrait-far-right {
-    right: 0;
-    transform: translateX(20%);
+    left: calc(50% + 600px);
+    transform: translateX(-50%);
 }
 
 .portrait-far-right .header-portrait {
-    max-height: 60vh;
+    max-height: 70vh;
 }
 
 /* Base portrait image styles */
@@ -202,6 +208,7 @@ body {
     display: block;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
 .header-portrait.loaded {
@@ -905,6 +912,12 @@ body.menu-open {
     .header {
         padding: var(--spacing-xl) var(--spacing-md);
         min-height: calc(100svh - 48px);
+    }
+    
+    /* Hide side portraits on mobile - only show center */
+    .portrait-left,
+    .portrait-right {
+        display: none;
     }
     
     .header-name {
