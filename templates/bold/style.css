@@ -129,17 +129,74 @@ body {
     }
 }
 
-/* Floating portrait image */
-.header-image {
+/* Multiple portrait images container */
+.header-images {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Base portrait wrapper styles */
+.portrait-left,
+.portrait-right,
+.portrait-center {
+    position: absolute;
+    bottom: 0;
+    pointer-events: auto;
+}
+
+/* Center portrait (main) */
+.portrait-center {
     left: 50%;
     transform: translateX(-50%);
+    z-index: 15;
+}
+
+/* Left side portraits */
+.portrait-left {
     z-index: 10;
 }
 
+.portrait-far-left {
+    left: 0;
+    transform: translateX(-20%);
+}
+
+.portrait-far-left .header-portrait {
+    max-height: 80vh;
+}
+
+.portrait-near-left {
+    left: 12%;
+    z-index: 12;
+}
+
+/* Right side portraits */
+.portrait-right {
+    z-index: 10;
+}
+
+.portrait-near-right {
+    right: 12%;
+    z-index: 12;
+}
+
+.portrait-far-right {
+    right: 0;
+    transform: translateX(20%);
+}
+
+.portrait-far-right .header-portrait {
+    max-height: 60vh;
+}
+
+/* Base portrait image styles */
 .header-portrait {
-    max-height: 98vh;
+    max-height: 75vh;
     margin-bottom: -70px;
     width: auto;
     display: block;
@@ -149,6 +206,20 @@ body {
 
 .header-portrait.loaded {
     opacity: 1;
+}
+
+/* Center portrait is larger */
+.portrait-center .header-portrait {
+    max-height: 98vh;
+}
+
+/* Rower portrait - offset more to the left */
+.portrait-rower {
+    transform: translateX(-15%);
+}
+
+.portrait-rower-img {
+    max-height: 80vh;
 }
 
 /* Image loader */
