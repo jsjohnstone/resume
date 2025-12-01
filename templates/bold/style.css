@@ -168,6 +168,7 @@ body {
 .portrait-far-left {
     left: calc(50% - 700px);
     transform: translateX(-50%);
+    bottom: 50px;
 }
 
 .portrait-far-left .header-portrait {
