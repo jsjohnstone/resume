@@ -44,6 +44,9 @@
         </div>
     </div>
     <div class="header-image">
-        <img src="./jamie.png" alt="Jamie Johnstone" class="header-portrait">
+        <div class="image-loader" id="imageLoader">
+            <div class="loader-spinner"></div>
+        </div>
+        <img src="./jamie.png" alt="Jamie Johnstone" class="header-portrait" id="headerPortrait" onload="this.classList.add('loaded'); document.getElementById('imageLoader').style.display='none';">
     </div>
 </header>

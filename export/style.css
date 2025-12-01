@@ -101,7 +101,7 @@ body {
 .marquee-text {
     font-family: var(--font-display);
     font-size: 28vh;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1;
     letter-spacing: -0.04em;
     color: var(--color-text-dark);
@@ -142,6 +142,36 @@ body {
     margin-bottom: -70px;
     width: auto;
     display: block;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.header-portrait.loaded {
+    opacity: 1;
+}
+
+/* Image loader */
+.image-loader {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.loader-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Jump Navigation */
@@ -345,6 +375,7 @@ body.menu-open {
 .section {
     padding: var(--spacing-3xl) var(--spacing-lg);
     position: relative;
+    scroll-margin-top: 48px;
 }
 
 .section-inner {
@@ -779,7 +810,7 @@ body.menu-open {
     background: var(--color-footer);
     color: #ffffff;
     padding: var(--spacing-lg) var(--spacing-lg);
-    text-align: center;
+    text-align: left;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -801,7 +832,7 @@ body.menu-open {
     
     .header {
         padding: var(--spacing-xl) var(--spacing-md);
-        min-height: calc(100vh - 48px);
+        min-height: calc(100svh - 48px);
     }
     
     .header-name {
