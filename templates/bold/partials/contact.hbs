@@ -1,0 +1,64 @@
+<h2 class="section-title">Get In Touch</h2>
+{{#with resume.basics}}
+<div class="contact-grid">
+    {{#if email}}
+    <div class="contact-item">
+        <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-content">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+                <a href="mailto:{{email}}">{{email}}</a>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    
+    {{#if phone}}
+    <div class="contact-item">
+        <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+        </div>
+        <div class="contact-content">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">
+                <a href="tel:{{phone}}">{{phone}}</a>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    
+    {{#if location.city}}
+    <div class="contact-item">
+        <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="contact-content">
+            <div class="contact-label">Location</div>
+            <div class="contact-value">{{location.city}}{{#if location.region}}, {{location.region}}{{/if}}</div>
+        </div>
+    </div>
+    {{/if}}
+    
+    {{#each profiles}}
+    <div class="contact-item">
+        <div class="contact-icon">
+            {{#if (eq network "LinkedIn")}}
+            <i class="fab fa-linkedin"></i>
+            {{else if (eq network "Github")}}
+            <i class="fab fa-github"></i>
+            {{else}}
+            <i class="fas fa-link"></i>
+            {{/if}}
+        </div>
+        <div class="contact-content">
+            <div class="contact-label">{{network}}</div>
+            <div class="contact-value">
+                <a href="{{url}}" target="_blank">{{username}}</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/with}}
