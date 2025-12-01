@@ -34,7 +34,7 @@
 <body>
     <!-- Header Section -->
     {{> header }}
-
+    
     <!-- Jump Navigation -->
     <nav class="jump-nav">
         <div class="jump-nav-inner">
@@ -45,7 +45,7 @@
                 {{/with}}
             </div>
             
-            <!-- Navigation Links -->
+            <!-- Navigation Links (Desktop) -->
             <div class="jump-links">
                 <a href="#career" class="jump-link">Tech</a>
                 <a href="#stage" class="jump-link">Theatre</a>
@@ -53,23 +53,42 @@
                 <a href="#contact" class="jump-link">Get In Touch</a>
             </div>
             
-            <!-- Social Links -->
-            <div class="nav-social">
-                {{#each resume.basics.profiles}}
-                {{#if (eq network "Github")}}
-                <a href="{{url}}" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                {{/if}}
-                {{#if (eq network "LinkedIn")}}
-                <a href="{{url}}" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                {{/if}}
-                {{/each}}
+            <!-- Right side: Social Links + Burger Menu -->
+            <div class="nav-right">
+                <div class="nav-social">
+                    {{#each resume.basics.profiles}}
+                    {{#if (eq network "Github")}}
+                    <a href="{{url}}" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    {{/if}}
+                    {{#if (eq network "LinkedIn")}}
+                    <a href="{{url}}" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                
+                <!-- Burger Menu Button (Mobile) -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#career" class="mobile-menu-link">Tech</a>
+            <a href="#stage" class="mobile-menu-link">Theatre</a>
+            <a href="#education" class="mobile-menu-link">Education</a>
+            <a href="#contact" class="mobile-menu-link">Get In Touch</a>
+        </div>
+    </div>
 
     <!-- Career Section -->
     <section id="career" class="section section-career">
@@ -107,7 +126,38 @@
     </footer>
 
     <script>
-        // Smooth scroll for jump navigation
+        // Burger menu toggle
+        const burgerMenu = document.getElementById('burgerMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        burgerMenu.addEventListener('click', () => {
+            burgerMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const target = document.querySelector(targetId);
+                
+                // Close menu
+                burgerMenu.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                
+                // Scroll to target after a short delay
+                setTimeout(() => {
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 100);
+            });
+        });
+
+        // Smooth scroll for desktop jump navigation
         document.querySelectorAll('.jump-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -119,35 +169,13 @@
             });
         });
 
-        // Section colours for blending (pastel palette)
-        const sectionColors = {
-            header: '#FBE47B',
-            career: '#FFCAB0',
-            stage: '#B5EAD7',
-            education: '#E2C2D9',
-            contact: '#000000'
-        };
-
         // Update active link on scroll
         const sections = document.querySelectorAll('.section');
         const jumpLinks = document.querySelectorAll('.jump-link');
-        const header = document.querySelector('.header');
-        const jumpNav = document.querySelector('.jump-nav');
-
-        // Initial state - navbar at bottom
-        jumpNav.classList.add('at-header');
 
         window.addEventListener('scroll', () => {
             let current = '';
             const scrollY = window.scrollY;
-            
-            // Toggle navbar position based on scroll
-            const headerBottom = header.offsetTop + header.offsetHeight - window.innerHeight;
-            if (scrollY > headerBottom) {
-                jumpNav.classList.remove('at-header');
-            } else {
-                jumpNav.classList.add('at-header');
-            }
             
             // Find current section
             sections.forEach((section) => {
@@ -157,13 +185,11 @@
                 }
             });
 
-            // Update active navigation link and scroll into view
+            // Update active navigation link
             jumpLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
-                    // Scroll the active link into view on the left
-                    link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
                 }
             });
         });
