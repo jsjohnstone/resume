@@ -103,6 +103,7 @@ body {
     font-size: 28vh;
     font-weight: 900;
     line-height: 1;
+    text-shadow: 0px 5px, 5px 0px, 5px 5px;
     letter-spacing: -0.04em;
     color: var(--color-text-dark);
     text-transform: uppercase;
