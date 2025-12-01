@@ -65,6 +65,7 @@
             "position": "Startup Solutions Architect",
             "location": "London, United Kingdom",
             "startDate": "2022-07-04",
+            "endDate": "2024-07-30",
             "summary": "Supported early-stage startups across the UK & Ireland as part of AWS’s Startup team, helping founders build scalable, secure infrastructure on the cloud:",
             "highlights": [
                 "Advised startups in SaaS, Energy, Healthcare, and Social sectors on AWS architecture, with a focus on Kubernetes and reliability.",
